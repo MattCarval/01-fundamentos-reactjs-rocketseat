@@ -6,10 +6,12 @@ export default defineConfig(({ command }) => {
   if (command === "serve") {
     return {
       base: "/",
+      plugins: [react()],
     };
   } else {
     return {
       base: "/01-fundamentos-reactjs-rocketseat/",
+      plugins: [react()],
     };
   }
 });
